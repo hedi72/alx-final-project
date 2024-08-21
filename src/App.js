@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import Home from "./pages/Home";
 import { Private } from "./pages/private";
@@ -119,15 +119,10 @@ const LightColor2 = styled.div`
 `;
 export default App;
 
-const Container = styled.div``;
 const Banner = styled.div`
   // background-image: url("/images/background3.png");
   background-size: cover; /* ou "contain" selon votre préférence */
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-`;
-
-const LightColor = styled.div`
-  background: linear-gradient(159deg, rgb(5, 5, 5) 0%, rgb(20, 20, 20) 100%);
 `;

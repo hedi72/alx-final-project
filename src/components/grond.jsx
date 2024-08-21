@@ -16,7 +16,7 @@ import {
 } from "mdb-react-ui-kit";
 
 import { useNavigate, useParams } from 'react-router-dom';
-import UserProfile from './UserProfile';
+
 import UserContext2 from "../context/Newcontext";
 
 

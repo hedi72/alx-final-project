@@ -6,7 +6,7 @@ import Projects from '../components/Projects/Projects'
 import Clients from '../components/Clients/Clients'
 import ProfComponent from '../components/Banner/ProfComponent';
 import { Navigate } from 'react-router-dom';
-import AlertProt from '../components/AlertProt';
+
 import { UserProvider } from "../context/Newcontext";
 import UserProfile from '../components/UserProfile';
 import UserContext2 from "../context/Newcontext";
