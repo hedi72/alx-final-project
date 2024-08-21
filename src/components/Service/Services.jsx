@@ -22,7 +22,7 @@ const Services = ({user}) => {
     <Container id="service" >
       <Slide direction="down">
         <h4>
-          Nos <span className="green">services</span>
+          Our <span className="green">services</span>
         </h4>
         {/* <h1>Ce que je fais</h1> */}
       </Slide>

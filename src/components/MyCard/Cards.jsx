@@ -18,9 +18,9 @@ const cards = (props) => {
     <Container id="service" style={{height: "100%"}}>
       <Slide direction="down">
         <h4>
-          Nos <span className="green">themes</span>
+          Our <span className="green">Services</span>
         </h4>
-        <h1>choisir votre theme</h1>
+        <h1>Trust us</h1>
       </Slide>
 
       

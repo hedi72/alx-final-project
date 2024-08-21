@@ -68,7 +68,7 @@ export default function App({user}) {
 
   return (
     <>
-      <MDBBtn style={{ backgroundColor: '#be0101' }} onClick={toggleOpen}>Voir plus...</MDBBtn>
+      <MDBBtn style={{ backgroundColor: '#be0101' }} onClick={toggleOpen}>See more...</MDBBtn>
       <MDBModal open={basicModal} setOpen={setBasicModal} tabIndex="-1">
         <MDBModalDialog>
           <MDBModalContent>
