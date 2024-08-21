@@ -1,25 +1,133 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { onAuthStateChanged } from "firebase/auth";
+import Home from "./pages/Home";
+import { Private } from "./pages/private";
+import { useEffect, useState } from "react";
+import { ProtectedRoute } from "./components/protectedRoute2";
+import { auth } from "./firebase/firebase.config";
+import Header from "./components/Banner/Header";
+import Footer from "./components/Footer/Footer";
+import Services from "./components/Service/Services";
+import Construction from "./pages/construction";
+import Plumbing from "./pages/plumbing";
+import Electricity from "./pages/electricity";
+
+import { UserProvider } from "./context/Newcontext";
+
+import AllUser from "./components/AllUser";
+import Tosti from "./components/Tosti";
 
 function App() {
+  const [user, setUser] = useState(null);
+  const [isFetching, setIsFetching] = useState(true);
+  useEffect(() => {
+    const unsubscriv = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+        setIsFetching(false);
+        return;
+      }
+      setUser(user);
+      setIsFetching(false);
+    });
+    return () => unsubscriv();
+  }, []);
+  console.log("appp", user);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Banner>
+      <Tosti />
+
+      <AllUser />
+      <div>
+        <Header user={user} />
+      </div>
+
+      <>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <UserProvider>
+                <Home user={user} />
+              </UserProvider>
+            }
+          />
+
+          <Route
+            path="/private"
+            element={
+              <ProtectedRoute user={user}>
+                <Private user={user} />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/Services"
+            element={
+              <ProtectedRoute user={user}>
+                <UserProvider>
+                  <Services user={user} />
+                </UserProvider>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/construction"
+            element={
+              <ProtectedRoute user={user}>
+                <UserProvider>
+                  <Construction user={user} />
+                </UserProvider>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/plumbing"
+            element={
+              <ProtectedRoute user={user}>
+                <UserProvider>
+                  <Plumbing user={user} />
+                </UserProvider>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/electricity"
+            element={
+              <ProtectedRoute user={user}>
+                <UserProvider>
+                  <Electricity user={user} />
+                </UserProvider>
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </>
+      <LightColor2>
+        <Footer />
+      </LightColor2>
+    </Banner>
   );
 }
-
+const LightColor2 = styled.div`
+  // background-image: url("/images/footer_bg.png");
+  background: #aaaaaa;
+`;
 export default App;
+
+const Container = styled.div``;
+const Banner = styled.div`
+  // background-image: url("/images/background3.png");
+  background-size: cover; /* ou "contain" selon votre préférence */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+`;
+
+const LightColor = styled.div`
+  background: linear-gradient(159deg, rgb(5, 5, 5) 0%, rgb(20, 20, 20) 100%);
+`;

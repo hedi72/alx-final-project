@@ -23,7 +23,7 @@ const Header = ({user}) => {
     <Container bar={bar}  >
 
         <Link to ='/'  >
-        <img src="/images/logoani.jpg" alt="Description" style={{ width: '200px' }} />
+        <img src="/images/logohome.png" alt="Description" style={{ width: '277px' }} />
         </Link>
         <Nav bar={bar} onClick={() => setBar(!bar)}>
             <span><Link to ='/'  onClick={() => setBar(!bar)}>Home</Link></span>
@@ -54,7 +54,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     max-width: 1280px;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     padding: 1.5rem 0;
     position: relative;

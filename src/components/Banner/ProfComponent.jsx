@@ -22,13 +22,10 @@ const ProfComponent = () => {
           {/* <h4>
             Hello <span className="green">I'am</span>
           </h4> */}
-          <h1 className="green">AnimaZone</h1>
-          <h3>Le spécialiste de l’animation</h3>
+          <h1 className="green">ReviveMyHome</h1>
+          <h3>Bringing New Life to Every Corner of Your Home</h3>
          <p>
-         Pour toutes vos soirées, publiques ou privées, AnimaZone c'est l'assurance d'une animation réussie.
-          Nous sommes la solution professionnelle de qualité pour tous vos évènements.
-          Nous mettons tout notre savoir-faire et notre savoir-être au services de vos évènements.
-
+         At ReviveMyHome, we breathe new life into your living spaces. From kitchen makeovers to complete home renovations, our expert team delivers top-quality craftsmanship tailored to your needs. We transform outdated interiors and exteriors into beautiful, functional spaces you'll love. Trust us to bring your vision to life with professionalism and care. Discover the potential of your home with ReviveMyHome.
          </p>
           
 
@@ -62,7 +59,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
 
-        <iframe style={{ borderRadius: '20px', height: '450px' }} src="https://www.youtube.com/embed/4cXXaoF86nE?si=3cAE7DyjOEn3z-gX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style={{ borderRadius: '20px', height: '450px' }} src="https://www.youtube.com/embed/nDnXXjs1OtQ?si=nfpFQvlC5m_ZMj0V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         {/* <iframe style={{ borderRadius: '20px', height: '450px' }}  src="https://www.youtube.com/embed/jou932U5Ckc?si=CfEhkiax7NZr0UCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
         {/* <img
@@ -87,7 +84,7 @@ const Container = styled.div`
   display: flex;
   gap: 2rem;
   padding-top: 3rem;
-  width: 50%;
+  width: 80%;
   max-width: 1280px;
   margin: 0 auto;
   z-index: 1;
