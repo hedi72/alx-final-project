@@ -30,7 +30,7 @@ function WebsiteCard({ link, onDelete }) {
   };
 
   return (
-    <div className="card mb-3 card-website" style={{minHeight:'220px'}}>
+    <div className="card mb-3 card-website" style={{minHeight:'180px'}}>
       <div className="card-body">
         <div className="d-flex justify-content-between">
           <h4>{link.theme} </h4>
@@ -52,7 +52,7 @@ function WebsiteCard({ link, onDelete }) {
         </a>
         
         
-        <p style={{float:'right', color:'green', fontSize:'15px', right: '10px'}}>Reservation en cours... {isLoading ? (link.status === 'pending' &&  <TailSpin stroke="green"/>) : null}</p>  
+        <p style={{float:'right', color:'green', fontSize:'15px', right: '10px', top:'10px'}}>Reservation in progress... {isLoading ? (link.status === 'pending' &&  <TailSpin stroke="green"/>) : null}</p>  
 
         </div>
     </div>

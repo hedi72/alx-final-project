@@ -21,7 +21,7 @@ export const Private = ({user}) => {
         <h4 >
         Hello <span className="green">{user.displayName}</span>
         </h4>
-        <h1>Voici votre reservation</h1>
+        <h1>Here is your reservation:</h1>
       </Slide>
              <Slide direction="up">
              <Cards>
