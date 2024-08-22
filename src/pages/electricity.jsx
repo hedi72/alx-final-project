@@ -11,7 +11,7 @@ function info3(props) {
   return (
     <div>
          <Cards user={props.user} title={"Electricity"} desc={des} imageSrc={imageSrc}/>
-         <FirebaseAdmin />
+       
       
     </div>
   )
