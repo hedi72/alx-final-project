@@ -1,14 +1,10 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
+
 import styled from "styled-components";
 import Card from "./MyCard";
 import { Slide } from "react-awesome-reveal";
-import { useParams } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
-import UserProfile from "../UserProfile";
-import Carousell from "../Carousell";
+
+import Carousell from "../carousell/Carousell";
 
 
 const cards = (props) => {

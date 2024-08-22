@@ -3,6 +3,10 @@ import { TailSpin } from 'react-loading-icons'; // Correct import statement
 import { useState } from "react";
 
 function WebsiteCard({ link, onDelete }) {
+
+  console.log('====================================');
+  console.log("cardlink", link);
+  console.log('====================================');
     const [isLoading, setIsLoading] = useState(true);
 
   // Simulate a loading delay
@@ -34,6 +38,12 @@ function WebsiteCard({ link, onDelete }) {
       <div className="card-body">
         <div className="d-flex justify-content-between">
           <h4>{link.theme} </h4>
+          
+
+          
+
+          
+
           <button
             className="btn btn-danger btn-sm d-flex align-items-center"
             onClick={(e) => {
@@ -43,6 +53,8 @@ function WebsiteCard({ link, onDelete }) {
           >
             <i className="material-icons">Annuler</i>
           </button>
+
+          
         </div>
         
         
@@ -53,8 +65,9 @@ function WebsiteCard({ link, onDelete }) {
         
         
         <p style={{float:'right', color:'green', fontSize:'15px', right: '10px', top:'10px'}}>Reservation in progress... {isLoading ? (link.status === 'pending' &&  <TailSpin stroke="green"/>) : null}</p>  
-
+        
         </div>
+        
     </div>
   );
 }

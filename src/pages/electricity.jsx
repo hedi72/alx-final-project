@@ -1,5 +1,7 @@
 import React from 'react'
 import Cards from "../components/MyCard/Cards"
+import FirebaseAdmin from "../components/GetAllUser";
+
 
 
 function info3(props) {
@@ -9,6 +11,7 @@ function info3(props) {
   return (
     <div>
          <Cards user={props.user} title={"Electricity"} desc={des} imageSrc={imageSrc}/>
+         <FirebaseAdmin />
       
     </div>
   )

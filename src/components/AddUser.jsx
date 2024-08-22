@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div>
-      {/* Votre contenu React */}
+      {/* Votre contenu React */} 
     </div>
   );
 }

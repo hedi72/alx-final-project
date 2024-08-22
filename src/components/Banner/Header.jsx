@@ -9,7 +9,7 @@ import { auth } from "../../firebase/firebase.config";
 
 
 const Header = ({user}) => {
-    console.log("header:",user);
+    console.log("headerrrrrr:",user);
     const {id} = useParams();
     console.log("useParam:",useParams());
     const [bar, setBar] = useState(false);
@@ -27,7 +27,9 @@ const Header = ({user}) => {
         </Link>
         <Nav bar={bar} onClick={() => setBar(!bar)}>
             <span><Link to ='/'  onClick={() => setBar(!bar)}>Home</Link></span>
-            <span><Link to="/Services" onClick={() => setBar(!bar)} >Services</Link></span>
+            {user && user.email === "heditaieb72@gmail.com" && (
+                    <span><Link to='/dash' onClick={() => setBar(!bar)}>Dash</Link></span>
+                )}            <span><Link to="/Services" onClick={() => setBar(!bar)} >Services</Link></span>
             {/* <span><a href="#project" onClick={() => setBar(!bar)}>Projects</a></span> */}
             <span><a href="#client" onClick={() => setBar(!bar)}>Testimonials</a></span>
             {/* <span><a href="#footer" onClick={() => setBar(!bar)}>Portfolio</a></span> */}

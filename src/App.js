@@ -6,18 +6,20 @@ import { onAuthStateChanged } from "firebase/auth";
 import Home from "./pages/Home";
 import { Private } from "./pages/private";
 import { useEffect, useState } from "react";
-import { ProtectedRoute } from "./components/protectedRoute2";
+import { ProtectedRoute } from "./routes/protectedRoute2";
 import { auth } from "./firebase/firebase.config";
 import Header from "./components/Banner/Header";
 import Footer from "./components/Footer/Footer";
 import Services from "./components/Service/Services";
+import FirebaseAdmin from "./components/GetAllUser";
 import Construction from "./pages/construction";
 import Plumbing from "./pages/plumbing";
 import Electricity from "./pages/electricity";
+import AdminDashboard from "./pages/adminDashboard";
 
 import { UserProvider } from "./context/Newcontext";
 
-import AllUser from "./components/AllUser";
+import AllUser from "./components/AddUser";
 import Tosti from "./components/Tosti";
 
 function App() {
@@ -101,6 +103,17 @@ function App() {
               <ProtectedRoute user={user}>
                 <UserProvider>
                   <Electricity user={user} />
+                </UserProvider>
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/dash"
+            element={
+              <ProtectedRoute user={user}>
+                <UserProvider>
+                  <AdminDashboard user={user} />
                 </UserProvider>
               </ProtectedRoute>
             }
