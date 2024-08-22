@@ -5,12 +5,10 @@ import {
   MDBCardTitle,
   MDBCardText,
   MDBCardImage,
-  MDBBtn,
   MDBRipple
 } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import Grond from "../grond";
-import { Link } from 'react-router-dom';
+import Grond from "../Login/loginHeader";
 
 
 
@@ -47,25 +45,3 @@ export default function Card(props) {
     </div>
   );
 }
-
-// import React from 'react'
-// import Grond from "../grond"
-
-
-// function Card(props) {
-//   return (
-//     <div>
-//       <div class="card">
-//   <img src={props.src} class="card-img-top" alt="Fissure in Sandstone"/>
-//   <div class="card-body">
-//     <h5 class="card-title">{props.title}</h5>
-//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//     {/* <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a> */}
-//     <Grond/>
-//   </div>
-// </div>
-//     </div>
-//   )
-// }
-
-// export default Card

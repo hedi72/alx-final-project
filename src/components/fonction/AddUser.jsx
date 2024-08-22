@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { auth, db } from '../firebase/firebase.config';
+import { auth, db } from '../../firebase/firebase.config';
 import { onAuthStateChanged } from 'firebase/auth';
 import { collection, addDoc, query, where, getDocs } from 'firebase/firestore';
 

@@ -4,11 +4,10 @@ import styled from "styled-components";
 import Services from '../components/Service/Services'
 import Projects from '../components/Projects/Projects'
 import Clients from '../components/Clients/Clients'
-import ProfComponent from '../components/Banner/ProfComponent';
+import ProfComponent from '../components/Banner/Banner';
 import { Navigate } from 'react-router-dom';
 
-import { UserProvider } from "../context/Newcontext";
-import UserProfile from '../components/UserProfile';
+
 import UserContext2 from "../context/Newcontext";
 
 function Home(props) {

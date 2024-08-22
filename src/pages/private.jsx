@@ -3,7 +3,7 @@ import { auth } from "../firebase/firebase.config";
 import GetList from "../components/reservation/GetList";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
-import FirebaseAdmin from "../components/GetAllUser";
+import FirebaseAdmin from "../components/fonction/GetAllUser";
 
 
 

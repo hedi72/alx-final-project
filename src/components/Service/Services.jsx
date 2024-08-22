@@ -1,22 +1,15 @@
 import React from "react";
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
-import { CgWebsite } from "react-icons/cg";
 import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 import { useParams } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
-import UserProfile from "../UserProfile";
+
 
 
 const Services = ({user}) => {
   console.log("services", user);
-  const {id} = useParams();
-  // if (user) {
-  //   return <Navigate to='/private'></Navigate>
-    
-  // }
+
+ 
 
   return (
     <Container id="service" >

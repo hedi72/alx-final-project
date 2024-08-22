@@ -11,15 +11,14 @@ import { auth } from "./firebase/firebase.config";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Services from "./components/Service/Services";
-import FirebaseAdmin from "./components/GetAllUser";
 import Construction from "./pages/construction";
 import Plumbing from "./pages/plumbing";
 import Electricity from "./pages/electricity";
 import AdminDashboard from "./pages/adminDashboard";
 
 import { UserProvider } from "./context/Newcontext";
-import AllUser from "./components/AddUser";
-import Tosti from "./components/Tosti";
+import AllUser from "./components/fonction/AddUser";
+import Tosti from "./components/notification/Tosti";
 
 function App() {
   const [user, setUser] = useState(null);

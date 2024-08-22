@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import Petti from './petti2'
+import React from "react";
+import Petti from './login'
 
 import { useState } from "react";
 
-import { AuthProvider } from "../context/UserContext";
+import { AuthProvider } from "../../context/UserContext";
 
 import {
   MDBBtn,
@@ -15,9 +15,8 @@ import {
   MDBModalBody,
 } from "mdb-react-ui-kit";
 
-import { useNavigate, useParams } from 'react-router-dom';
 
-import UserContext2 from "../context/Newcontext";
+
 
 
 
@@ -25,7 +24,7 @@ import UserContext2 from "../context/Newcontext";
 
 export default function App({user}) {
   const [basicModal, setBasicModal] = useState(false);
-  const navigate = useNavigate();
+  
 
   const toggleOpen = () =>{
     

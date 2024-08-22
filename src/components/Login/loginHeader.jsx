@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import Petti from './petti2'
+import Petti from './login'
 
 import { useState } from "react";
 
-import { AuthProvider } from "../context/UserContext";
+import { AuthProvider } from "../../context/UserContext";
 
 import {
   MDBBtn,
@@ -15,9 +15,9 @@ import {
   MDBModalBody,
 } from "mdb-react-ui-kit";
 
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-import UserContext2 from "../context/Newcontext";
+import UserContext2 from "../../context/Newcontext";
 
 
 
@@ -26,7 +26,7 @@ import UserContext2 from "../context/Newcontext";
 export default function App({user}) {
   const { user2, update_serv } = useContext(UserContext2);
   console.log("grondUser2:",user2);
-  const { monParametre } = useParams();
+ 
   console.log("grond", user.id);
   const [basicModal, setBasicModal] = useState(false);
   const navigate = useNavigate();

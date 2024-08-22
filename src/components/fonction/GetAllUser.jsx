@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { auth, db } from '../firebase/firebase.config';
+import { auth, db } from '../../firebase/firebase.config';
 import { onAuthStateChanged } from "firebase/auth";
 import { collection, getDocs, doc, updateDoc, deleteDoc } from "firebase/firestore";
 import { MDBBadge, MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';

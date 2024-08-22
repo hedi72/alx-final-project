@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth } from "../../firebase/firebase.config";
-import TestModal from '../LoginModal';
+import TestModal from '../Login/LoginModal';
 
 // import myImage from '../../../public/images/logoani.jpg';
 
