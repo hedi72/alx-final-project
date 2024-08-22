@@ -119,7 +119,7 @@ const Footer = () => {
       </Form>
 
       <Fade >
-          <ArrowUp onClick={scrollUp} className="button" style={{position: 'absolute', bottom: '50px'}}>
+          <ArrowUp onClick={scrollUp} className="button" style={{position: "absolute", bottom: "0", right: "-85px"}}>
             <AiOutlineArrowUp />
           </ArrowUp>
         </Fade>
