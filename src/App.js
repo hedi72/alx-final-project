@@ -128,6 +128,7 @@ function App() {
 const LightColor2 = styled.div`
   // background-image: url("/images/footer_bg.png");
   background: #aaaaaa;
+  border-radius: 100px;
 `;
 export default App;
 

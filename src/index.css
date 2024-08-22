@@ -192,98 +192,16 @@ a.carousel-control-prev:hover {
 }
  */
 
- .mickey-checkbox+label.btn.btn-primary {
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  width: 50px; /* Ajustez la taille selon vos besoins */
-  height: 50px; /* Ajustez la taille selon vos besoins */
-  background-image: url("/public/images/mickey.png"); /* Remplacez par le chemin vers votre image Mickey */
-  background-size: cover;
-} 
-.mickey-checkbox+label.btn.btn-primary:hover {
-  width: 150px; 
-  height: 150px;
-}
 
-.mickey-checkbox:checked+label.btn.btn-primary {
-  width: 70px; /* Ajustez la taille selon vos besoins */
-  height: 70px;
-  border: #be0101 solid 5px;
-}
 
-.mini-checkbox+label.btn.btn-primary {
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  width: 50px; /* Ajustez la taille selon vos besoins */
-  height: 50px; /* Ajustez la taille selon vos besoins */
-  background-image: url("/public/images/mini.png"); /* Remplacez par le chemin vers votre image Mickey */
-  background-size: cover;
-} 
-.mini-checkbox+label.btn.btn-primary:hover {
-  width: 150px; 
-  height: 150px;
-}
-.mini-checkbox:checked+label.btn.btn-primary {
-  width: 70px; /* Ajustez la taille selon vos besoins */
-  height: 70px;
-  border: #be0101 solid 5px;
-}
-.pluto-checkbox+label.btn.btn-primary {
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  width: 50px; /* Ajustez la taille selon vos besoins */
-  height: 50px; /* Ajustez la taille selon vos besoins */
-  background-image: url("/public/images/pluto.png"); /* Remplacez par le chemin vers votre image Mickey */
-  background-size: cover;
-} 
-.pluto-checkbox+label.btn.btn-primary:hover {
-  width: 150px; 
-  height: 150px;
-}
-.pluto-checkbox:checked+label.btn.btn-primary {
-  width: 70px; /* Ajustez la taille selon vos besoins */
-  height: 70px;
-  border: #be0101 solid 5px;
-}
-.daisy-checkbox+label.btn.btn-primary {
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  width: 50px; /* Ajustez la taille selon vos besoins */
-  height: 50px; /* Ajustez la taille selon vos besoins */
-  background-image: url("/public/images/daisy.png"); /* Remplacez par le chemin vers votre image Mickey */
-  background-size: cover;
-}
-.daisy-checkbox+label.btn.btn-primary:hover {
-  width: 150px; 
-  height: 150px;
-}
-.daisy-checkbox:checked+label.btn.btn-primary {
-  width: 70px; /* Ajustez la taille selon vos besoins */
-  height: 70px;
-  border: #be0101 solid 5px;
-}
-.donald-checkbox+label.btn.btn-primary {
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  width: 50px; /* Ajustez la taille selon vos besoins */
-  height: 50px; /* Ajustez la taille selon vos besoins */
-  background-image: url("/public/images/donald.png"); /* Remplacez par le chemin vers votre image Mickey */
-  background-size: cover;
-}
-.donald-checkbox+label.btn.btn-primary:hover {
-  width: 150px; 
-  height: 150px;
-}
-.donald-checkbox:checked+label.btn.btn-primary {
-  width: 70px; /* Ajustez la taille selon vos besoins */
-  height: 70px;
-  border: #be0101 solid 5px;
-}
+
+
+
+
+
+
+
+
 
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   color: var(--mdb-btn-disabled-color);
