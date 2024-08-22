@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { signOut } from "firebase/auth";
 import { auth } from "../../firebase/firebase.config";
+import TestModal from '../LoginModal';
 
 // import myImage from '../../../public/images/logoani.jpg';
 
@@ -34,7 +35,11 @@ const Header = ({user}) => {
             <span><a href="#client" onClick={() => setBar(!bar)}>Testimonials</a></span>
             {/* <span><a href="#footer" onClick={() => setBar(!bar)}>Portfolio</a></span> */}
             <span><a href="#footer" onClick={() => setBar(!bar)}>{id}</a></span>
-            {user && <span> <button className="btn btn-danger btn-sm " onClick={handleSignOut}>sign out</button></span>}
+            {user && <span> <button  className="btn btn-danger btn-sm " style={{backgroundColor:"#be0101"}} onClick={handleSignOut}>sign out</button></span>}
+            
+            {!user && <span> <TestModal/></span>}
+
+            
             
 
 

@@ -18,7 +18,6 @@ import Electricity from "./pages/electricity";
 import AdminDashboard from "./pages/adminDashboard";
 
 import { UserProvider } from "./context/Newcontext";
-
 import AllUser from "./components/AddUser";
 import Tosti from "./components/Tosti";
 

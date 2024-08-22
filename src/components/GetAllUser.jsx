@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { auth, db } from '../firebase/firebase.config';
 import { onAuthStateChanged } from "firebase/auth";
-import { collection, getDocs, doc, updateDoc } from "firebase/firestore";
+import { collection, getDocs, doc, updateDoc, deleteDoc } from "firebase/firestore";
 import { MDBBadge, MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 
 function App() {
@@ -24,10 +24,7 @@ function App() {
   }, []);
 
   const handleEditClick = async (reservationId, currentStatus) => {
-    // Détermine le nouveau statut
     const newStatus = currentStatus === 'Active' ? 'Pending' : 'Active';
-
-    // Met à jour l'état local
     setReservations(prevReservations =>
       prevReservations.map(reservation =>
         reservation.id === reservationId
@@ -35,12 +32,18 @@ function App() {
           : reservation
       )
     );
-
-    // Met à jour Firestore
     const reservationRef = doc(db, 'reservations', reservationId);
-    await updateDoc(reservationRef, {
-      status: newStatus
-    });
+    await updateDoc(reservationRef, { status: newStatus });
+  };
+
+  const handleDeleteClick = async (reservationId) => {
+    // Supprime la réservation de Firestore
+    await deleteDoc(doc(db, 'reservations', reservationId));
+
+    // Met à jour l'état local pour retirer la réservation
+    setReservations(prevReservations =>
+      prevReservations.filter(reservation => reservation.id !== reservationId)
+    );
   };
 
   return (
@@ -92,19 +95,20 @@ function App() {
                 >
                   Edit
                 </MDBBtn>
+                <MDBBtn 
+                  color='danger' 
+                  rounded 
+                  size='sm' 
+                  onClick={() => handleDeleteClick(reservation.id)}
+                >
+                  Delete
+                </MDBBtn>
               </td>
             </tr>
           ))}
         </MDBTableBody>
       </MDBTable>
-      <h1>Liste des Réservations</h1>
-      <ul>
-        {reservations.map(reservation => (
-          <li key={reservation.id}>
-            {reservation.email} - {reservation.date} - {reservation.status}
-          </li>
-        ))}
-      </ul>
+      
     </div>
   );
 }
