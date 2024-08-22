@@ -27,10 +27,13 @@ const Header = ({user}) => {
         <img src="/images/logohome.png" alt="Description" style={{ width: '277px' }} />
         </Link>
         <Nav bar={bar} onClick={() => setBar(!bar)}>
-            <span><Link to ='/'  onClick={() => setBar(!bar)}>Home</Link></span>
-            {user && user.email === "heditaieb72@gmail.com" && (
+            <span><Link to ='/'  onClick={() => setBar(!bar)}>{user && user.email === "admin@gmail.com" ? (
+                    <span>Dashboard</span>
+                ):<span>Home</span>} </Link></span>
+            {/* {user && user.email === "heditaieb72@gmail.com" && (
                     <span><Link to='/dash' onClick={() => setBar(!bar)}>Dash</Link></span>
-                )}            <span><Link to="/Services" onClick={() => setBar(!bar)} >Services</Link></span>
+                )}    */}
+                         <span><Link to="/Services" onClick={() => setBar(!bar)} >Services</Link></span>
             {/* <span><a href="#project" onClick={() => setBar(!bar)}>Projects</a></span> */}
             <span><a href="#client" onClick={() => setBar(!bar)}>Testimonials</a></span>
             {/* <span><a href="#footer" onClick={() => setBar(!bar)}>Portfolio</a></span> */}

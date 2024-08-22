@@ -8,7 +8,7 @@ import { Private } from "./pages/private";
 import { useEffect, useState } from "react";
 import { ProtectedRoute } from "./routes/protectedRoute2";
 import { auth } from "./firebase/firebase.config";
-import Header from "./components/Banner/Header";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Services from "./components/Service/Services";
 import FirebaseAdmin from "./components/GetAllUser";

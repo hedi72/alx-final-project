@@ -3,6 +3,8 @@ import { auth } from "../firebase/firebase.config";
 import GetList from "../components/reservation/GetList";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
+import FirebaseAdmin from "../components/GetAllUser";
+
 
 
 
@@ -19,13 +21,22 @@ export const Private = ({user}) => {
         <Container >
             <Slide direction="down">
         <h4 >
-        Hello <span className="green">{user.displayName}</span>
+        {user && user.email === "admin@gmail.com" ? (
+                   <>Dashboard <span className="green">Admin</span></>
+                ):<>Hello <span className="green">{user.displayName}</span></>} 
+        
         </h4>
-        <h1>Here is your reservation:</h1>
-      </Slide>
+        {user && user.email === "admin@gmail.com" ? (
+                   <h1>Here is lists of all reservation:</h1>
+                ):<h1>Here is your reservation:</h1>} 
+        
+            </Slide>
              <Slide direction="up">
+             {user && user.email === "admin@gmail.com" && (
+                     <FirebaseAdmin />
+                )} 
              <Cards>
-             <GetList user={user} />
+              <GetList user={user} />
              </Cards>
              </Slide>
             
