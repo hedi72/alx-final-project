@@ -1,4 +1,7 @@
 // UserContext.js
+
+// This code sets up a complete authentication system using Firebase in a React application.
+//  It allows users to create an account, sign in (with email/password or Google), and log out.
 import React, { createContext, useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,

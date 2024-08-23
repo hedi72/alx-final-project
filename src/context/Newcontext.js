@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-
+// I use this context to share user connection
 // Create the context
 const UserContext = createContext();
 

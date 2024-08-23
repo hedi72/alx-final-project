@@ -36,6 +36,7 @@ function Home(props) {
       <Services />
       <Projects />
       <Clients />
+      
     </div>
   );
 }
