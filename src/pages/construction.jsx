@@ -1,5 +1,4 @@
 import React from 'react'
-import ModalReservation from '../components/reservation/ModalReservation'
 import Cards from "../components/MyCard/Cards"
 
 function info(props) {
@@ -7,10 +6,7 @@ function info(props) {
   let imageSrc = ["../../images/construc1.png","../../images/construc2.png",'../../images/construc3.png',"../../images/constru4.png"]
   return (
     <div>
-        <Cards user={props.user} title={"Construction, rénovation"} desc={des} imageSrc={imageSrc}/>
-
-        
-      
+        <Cards user={props.user} title={"Construction, rénovation"} desc={des} imageSrc={imageSrc}/>      
     </div>
   )
 }

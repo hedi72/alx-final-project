@@ -1,5 +1,5 @@
-import { signOut } from "firebase/auth";
-import { auth } from "../firebase/firebase.config";
+// import { signOut } from "firebase/auth";
+// import { auth } from "../firebase/firebase.config";
 import GetList from "../components/reservation/GetList";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
@@ -12,11 +12,11 @@ export const Private = ({user}) => {
     console.log('====================================');
     console.log(user.displayName);
     console.log('====================================');
-    const handleSignOut = () => {
-        signOut(auth)
-        .then(()=>console.log("sign out"))
-        .catch((error)=> console.log(error));
-    }
+    // const handleSignOut = () => {
+    //     signOut(auth)
+    //     .then(()=>console.log("sign out"))
+    //     .catch((error)=> console.log(error));
+    // }
     return(
         <Container >
             <Slide direction="down">

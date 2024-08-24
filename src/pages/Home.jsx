@@ -1,20 +1,17 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-
 import Services from '../components/Service/Services'
 import Projects from '../components/Projects/Projects'
 import Clients from '../components/Clients/Clients'
 import ProfComponent from '../components/Banner/Banner';
 import { Navigate } from 'react-router-dom';
-
-
-import UserContext2 from "../context/Newcontext";
+import CurrentUserConnect from "../context/CurrientUserContext";
 
 function Home(props) {
-  const { user2, update_serv } = useContext(UserContext2);
-  console.log("home_serv", user2 ? user2.username : "Aucun utilisateur connecté");
+  const { user2, update_serv } = useContext(CurrentUserConnect);
+  console.log("contextUser", user2 ? user2.username : "Aucun utilisateur connecté");
 
-  console.log("home_id", props.user ? props.user : "Aucun utilisateur connecté");
+  console.log("propsUser", props.user ? props.user : "Aucun utilisateur connecté");
   console.log(typeof typeof 1);
 
   if (props.user) {
@@ -40,11 +37,6 @@ function Home(props) {
     </div>
   );
 }
-     
-   
-
-
-export default Home
 
 const Banner = styled.div`
 
@@ -62,3 +54,10 @@ const Banner = styled.div`
     padding-bottom: 2rem;
   }
 `;
+     
+   
+
+
+export default Home
+
+

@@ -115,19 +115,7 @@ const Container = styled.div`
         }
     }
 `
-const Logo = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    span{
-        font-size: 1.8rem;
-    }
 
-    h1{
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-`
 const Nav = styled.div`
     @media(max-width:640px){
         position: fixed;

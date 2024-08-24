@@ -6,7 +6,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import Home from "./pages/Home";
 import { Private } from "./pages/private";
 import { useEffect, useState } from "react";
-import { ProtectedRoute } from "./routes/protectedRoute2";
+import { ProtectedRoute } from "./routes/protectedRoute";
 import { auth } from "./firebase/firebase.config";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -16,7 +16,7 @@ import Plumbing from "./pages/plumbing";
 import Electricity from "./pages/electricity";
 import AdminDashboard from "./pages/adminDashboard";
 
-import { UserProvider } from "./context/Newcontext";
+import { UserProvider } from "./context/CurrientUserContext";
 import AllUser from "./components/fonction/AddUser";
 import Tosti from "./components/notification/Tosti";
 

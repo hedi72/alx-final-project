@@ -14,7 +14,7 @@ import Grond from "../Login/loginHeader";
 
 
 export default function Card(props) {
-  console.log("card:",props);
+  console.log("cardyyyyy:",props);
   
   return (
     <div>

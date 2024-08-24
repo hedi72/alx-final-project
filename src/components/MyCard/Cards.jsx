@@ -26,15 +26,10 @@ const cards = (props) => {
             <div >
             <Card style={{ borderRadius:'50px'}}
             user = {props.user}
-            st = "{{backgroundColor:'#00afff', borderRadius:'50px'}}"
-            src='../../images/anniversaire3.png'
-            id = {1}
-              
             title={props.title}
             disc={props.desc}
-              >
+              />
 
-              </Card>
 
             </div>
          

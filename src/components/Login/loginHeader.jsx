@@ -17,15 +17,18 @@ import {
 
 import { useNavigate } from 'react-router-dom';
 
-import UserContext2 from "../../context/Newcontext";
+import serviceId from "../../context/CurrientUserContext";
 
 
 
 
 
 export default function App({user}) {
-  const { user2, update_serv } = useContext(UserContext2);
-  console.log("grondUser2:",user2);
+  console.log('====================================');
+  console.log("userProps",user);
+  console.log('====================================');
+  const { user2, update_serv } = useContext(serviceId);
+  console.log("grondUser22:",user2);
  
   console.log("grond", user.id);
   const [basicModal, setBasicModal] = useState(false);

@@ -1,5 +1,4 @@
 import React from 'react'
-import ModalReservation from '../components/reservation/ModalReservation'
 import Cards from "../components/MyCard/Cards"
 
 function info2(props) {
