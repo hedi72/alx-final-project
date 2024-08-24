@@ -125,16 +125,13 @@ function App() {
   );
 }
 const LightColor2 = styled.div`
-  // background-image: url("/images/footer_bg.png");
   background: #aaaaaa;
   border-radius: 100px;
 `;
-export default App;
-
 const Banner = styled.div`
-  // background-image: url("/images/background3.png");
-  background-size: cover; /* ou "contain" selon votre préférence */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 `;
+export default App;
