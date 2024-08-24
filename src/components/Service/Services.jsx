@@ -23,7 +23,7 @@ const Services = ({user}) => {
       
       
       <Cards>
-        {/* <Slide direction="left"> */}
+
           <Card
             id = {1}
             user = {user}
@@ -33,8 +33,7 @@ const Services = ({user}) => {
             src = {'/images/renov.png'}
             
           />
-        {/* </Slide> */}
-        {/* <Slide direction="up"> */}
+
           <Card
             id = {2}
             user = {user}
@@ -43,8 +42,7 @@ const Services = ({user}) => {
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
                 src = {'/images/plomb.png'}
           />
-        {/* </Slide> */}
-        {/* <Slide direction="right"> */}
+
           <Card
             id = {3}
             user = {user}
@@ -56,7 +54,7 @@ const Services = ({user}) => {
          
           
           
-        {/* </Slide> */}
+
       </Cards>
     </Container>
   );

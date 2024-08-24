@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { getreservations } from "../../firebase/api";
 import { deletereservation } from "../../firebase/api";
-import CardList from "./CardList";
+import CardList from "./Card";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
 
-const GetList = (props) => {
+const Cards = (props) => {
   const [reservations, setReservations] = useState([]);
-  const navigate = useNavigate();
-
+  
   useEffect(() => {
-    const getLinks = async () => {
+    const getRevs = async () => {
       try {
         const querySnapshot = await getreservations();
         const docs = querySnapshot.docs.map((doc) => ({
@@ -23,7 +21,7 @@ const GetList = (props) => {
       }
     };
 
-    getLinks();
+    getRevs();
   }, []);
 
   const handleDelete = async (id) => {
@@ -61,4 +59,4 @@ const GetList = (props) => {
   );
 };
 
-export default GetList;
+export default Cards;

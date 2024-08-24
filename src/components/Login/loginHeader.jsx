@@ -24,9 +24,7 @@ import serviceId from "../../context/CurrientUserContext";
 
 
 export default function App({user}) {
-  console.log('====================================');
-  console.log("userProps",user);
-  console.log('====================================');
+
   const { user2, update_serv } = useContext(serviceId);
   console.log("grondUser22:",user2);
  

@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from "../components/MyCard/Cards"
+import Cards from "../components/Details_Serv/Cards"
 
 
 

@@ -17,12 +17,13 @@ import Electricity from "./pages/electricity";
 import AdminDashboard from "./pages/adminDashboard";
 
 import { UserProvider } from "./context/CurrientUserContext";
-import AllUser from "./components/fonction/AddUser";
+import AllUser from "./components/User/AddUser";
 import Tosti from "./components/notification/Tosti";
 
 function App() {
   const [user, setUser] = useState(null);
   const [isFetching, setIsFetching] = useState(true);
+  // Surveille l'état d'authentification de l'utilisateur
   useEffect(() => {
     const unsubscriv = onAuthStateChanged(auth, (user) => {
       if (user) {

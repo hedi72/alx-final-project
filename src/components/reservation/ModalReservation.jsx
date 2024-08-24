@@ -7,14 +7,11 @@ import {
   MDBModalHeader,
   MDBModalTitle,
   MDBModalBody,
-  MDBModalFooter,
 } from 'mdb-react-ui-kit';
-import Reservation from './Reservation';
+import  { Forms } from './Forms';
 
 export default function App(props) {
-  console.log('====================================');
-  console.log("modal:", props.card.title);
-  console.log('====================================');
+
   const [basicModal, setBasicModal] = useState(false);
 
   const toggleOpen = () => setBasicModal(!basicModal);
@@ -22,8 +19,8 @@ export default function App(props) {
   return (
     <>
     <div style={{ display: "flex", justifyContent: "center" }}>      
-    <MDBBtn style={{backgroundColor:"red"}} onClick={toggleOpen}>Reserver</MDBBtn>
-</div>
+       <MDBBtn style={{backgroundColor:"red"}} onClick={toggleOpen}>Reserver</MDBBtn>
+    </div>
       <MDBModal open={basicModal} setOpen={setBasicModal} tabIndex='-1'>
         <MDBModalDialog>
           <MDBModalContent>
@@ -32,15 +29,8 @@ export default function App(props) {
               <MDBBtn className='btn-close' color='none' onClick={toggleOpen}></MDBBtn>
             </MDBModalHeader>
             <MDBModalBody style={{width:'100%'}}>
-                <Reservation cardName= {props.card.title} user = {props.user}/>
+                <Forms cardName= {props.card.title} user = {props.user}/>
             </MDBModalBody>
-
-            {/* <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={toggleOpen}>
-                Close
-              </MDBBtn>
-              <MDBBtn>Save changes</MDBBtn>
-            </MDBModalFooter> */}
           </MDBModalContent>
         </MDBModalDialog>
       </MDBModal>

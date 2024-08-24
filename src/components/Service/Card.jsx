@@ -8,13 +8,11 @@ import {
   MDBRipple
 } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import Grond from "../Login/loginHeader";
-
-
+import Login from "../Login/loginHeader";
 
 
 export default function Card(props) {
-  console.log("cardyyyyy:",props);
+  
   
   return (
     <div>
@@ -32,7 +30,7 @@ export default function Card(props) {
                 Some quick example text to build on the card title and make up the bulk of the card's content.
             </MDBCardText>
             {/* <MDBBtn href='#' style={{ backgroundColor: '#be0101' }} >Button</MDBBtn> */}
-            <Grond user={props}  />
+            <Login user={props}  />
             <div style={{position: 'absolute'}}>
             
             </div>

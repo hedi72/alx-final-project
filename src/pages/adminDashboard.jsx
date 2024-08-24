@@ -1,8 +1,5 @@
 import React from 'react'
-import GetAllUserReserv from "../components/fonction/GetAllUser";
-
-
-
+import GetAllUserReserv from "../components/User/GetAllUser";
 
 function adminDash() {
  

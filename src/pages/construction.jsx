@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from "../components/MyCard/Cards"
+import Cards from "../components/Details_Serv/Cards"
 
 function info(props) {
   const des = " Specialists in transforming and enhancing your spaces, we offer comprehensive construction and renovation services. Whether it's for new construction, modernization, or rehabilitation, we combine expertise and quality to bring your projects to life according to your expectations.    "
