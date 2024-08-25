@@ -1,5 +1,8 @@
 # ReviveMyHome - Web Application for Construction Services
 
+![image](https://github.com/user-attachments/assets/ce12c310-5dba-4617-92c2-f21994e0cf8a)
+
+
 ## Project Description
 
 ReviveMyHome is a web application developed for a construction company offering services in electricity, plumbing, and general construction. This project was built using React.js for the front-end and Firebase for the backend. The application provides an intuitive platform for users to easily find and request the services they need.
