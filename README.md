@@ -75,15 +75,23 @@ This project was developed as an academic project to apply modern web developmen
 **Challenge:** Managing real-time data efficiently.
 
 **Solution:** Used Firebase's real-time database and optimized data queries.
+
 **Challenge:** Ensuring a smooth and responsive user experience.
 
 **Solution:** Leveraged React.js’s component-based architecture to build a modular and responsive interface.
+
 ## Future Improvements
 **User Authentication:** Plan to add user login and profile management.
 **Advanced Analytics:** Implement analytics to track user behavior and service trends.
 **Service Expansion:** Introduce additional services and features to broaden the platform's capabilities.
 ## Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcomed.
+
+## Contact
+If you have any questions or suggestions, feel free to contact me:
+
+Email: heditaieb72@gmail.com
+LinkedIn: www.linkedin.com/in/mohamed-hedi-taieb
 
 
 
