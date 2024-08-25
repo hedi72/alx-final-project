@@ -17,8 +17,7 @@ ReviveMyHome is a web application developed for a construction company offering 
 6. [Challenges and Solutions](#challenges-and-solutions)
 7. [Future Improvements](#future-improvements)
 8. [Contributing](#contributing)
-9. [License](#license)
-10. [Contact](#contact)
+9. [Contact](#contact)
 
 ## Features
 
@@ -81,9 +80,9 @@ This project was developed as an academic project to apply modern web developmen
 **Solution:** Leveraged React.js’s component-based architecture to build a modular and responsive interface.
 
 ## Future Improvements
-**User Authentication:** Plan to add user login and profile management.
 **Advanced Analytics:** Implement analytics to track user behavior and service trends.
 **Service Expansion:** Introduce additional services and features to broaden the platform's capabilities.
+
 ## Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcomed.
 
@@ -91,6 +90,7 @@ Contributions are welcome! If you'd like to contribute, please fork the reposito
 If you have any questions or suggestions, feel free to contact me:
 
 Email: heditaieb72@gmail.com
+
 LinkedIn: www.linkedin.com/in/mohamed-hedi-taieb
 
 
